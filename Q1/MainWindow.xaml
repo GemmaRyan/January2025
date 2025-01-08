@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label Content="Events" HorizontalAlignment="Left" Margin="137,51,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxSearch" HorizontalAlignment="Left" Margin="236,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="tbxSearch_KeyUp" RenderTransformOrigin="0.5,0.5" Text="Search">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.222"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Tickets" HorizontalAlignment="Left" Margin="521,51,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxNoTickets" HorizontalAlignment="Left" Margin="557,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="tbxSearch_KeyUp" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.222"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Number of Tickets" HorizontalAlignment="Left" Margin="437,371,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnBook" Content="Book" HorizontalAlignment="Left" Margin="703,377,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbEvents" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="95,92,441,92"/>
+        <ListBox x:Name="lbTickets" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="373,92,66,92"/>
 
     </Grid>
 </Window>
